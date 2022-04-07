@@ -1,0 +1,47 @@
+.z-btn {
+  @apply inline-block cursor-pointer m-2 py-2 px-10 font-medium rounded text-gray-700 border border-solid hover:bg-gray-100 active:bg-gray-200;
+}
+
+.z-btn.primary {
+  @apply bg-blue-400 hover:bg-blue-300 text-white active:bg-blue-400;
+}
+
+.z-btn.primary.plain {
+  @apply bg-gray-50 border-blue-300 hover:bg-blue-300 text-blue-400 active:bg-blue-400 hover:text-white;
+}
+
+.z-btn.danger {
+  @apply bg-red-400 hover:bg-red-300 text-white active:bg-red-400;
+}
+
+.z-btn.danger.plain {
+  @apply bg-gray-50 border-red-300 hover:bg-red-300 text-red-400 active:bg-red-400 hover:text-white;
+}
+
+.z-btn.success {
+  @apply bg-green-400 hover:bg-green-300 text-white active:bg-green-400;
+}
+
+.z-btn.success.plain {
+  @apply bg-gray-50 border-green-300 hover:bg-green-300 text-green-400 active:bg-green-400 hover:text-white;
+}
+
+.z-btn.info {
+  @apply bg-gray-400 hover:bg-gray-300 text-white active:bg-gray-400;
+}
+
+.z-btn.info.plain {
+  @apply bg-gray-50 border-gray-300 hover:bg-gray-300 text-gray-400 active:bg-gray-400 hover:text-white;
+}
+
+.z-btn.warning {
+  @apply bg-yellow-400 hover:bg-yellow-300 text-white active:bg-yellow-400;
+}
+
+.z-btn.warning.plain {
+  @apply bg-yellow-50 border-yellow-300 hover:bg-yellow-300 text-yellow-400 active:bg-yellow-400 hover:text-white;
+}
+
+.z-btn.round {
+  @apply rounded-3xl;
+}

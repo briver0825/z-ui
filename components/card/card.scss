@@ -1,0 +1,11 @@
+.z-card {
+  @apply shadow-xl border overflow-hidden border-gray-100 rounded-md m-4;
+}
+
+.z-card .card-header {
+  @apply border-b py-4 px-6 text-lg;
+}
+
+.z-card .card-body {
+  @apply p-6;
+}
