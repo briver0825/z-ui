@@ -1,7 +1,5 @@
 import { defineComponent, inject } from "vue"
 
-import "./col.scss"
-
 export default defineComponent({
   name: "ZCol",
   props: {

@@ -2,16 +2,37 @@ import { App } from "vue"
 
 import "./taiwind.scss"
 
-import Button from "./components/button"
-import Card from "./components/card"
-import Row from "./components/row"
-import Col from "./components/col"
+export * from "./components/button"
+export * from "./components/card"
+export * from "./components/row"
+export * from "./components/layout"
 
-const components = [Button, Card, Row, Col]
+import ZButton from "./components/button"
+import ZCard from "./components/card"
+import { ZRow, ZCol } from "./components/row"
+import {
+  ZLayout,
+  ZLayoutContainer,
+  ZLayoutContent,
+  ZLayoutHeader,
+  ZLayoutSider,
+} from "./components/layout"
+
+const components = [
+  ZButton,
+  ZCard,
+  ZRow,
+  ZCol,
+  ZLayout,
+  ZLayoutContainer,
+  ZLayoutContent,
+  ZLayoutHeader,
+  ZLayoutSider,
+]
 
 const install = (app: App) => {
   components.forEach((component) => {
-    component.install(app)
+    component.use(app)
   })
 }
 export default install

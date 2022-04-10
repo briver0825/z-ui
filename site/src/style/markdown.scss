@@ -1,0 +1,44 @@
+.markdown-body {
+  @apply p-16 text-gray-800;
+
+  & h1 {
+    @apply text-3xl;
+  }
+  & h2 {
+    @apply text-2xl my-8;
+  }
+  & h3 {
+    @apply text-xl my-6;
+  }
+  & h4 {
+    @apply text-lg;
+  }
+  & h5 {
+    @apply text-base;
+  }
+  & h6 {
+    @apply text-sm;
+  }
+  & p {
+    @apply py-2 font-light;
+  }
+  & pre {
+    @apply p-4 border-t mt-4 text-blue-400;
+  }
+  & table {
+    @apply border  text-left w-full;
+
+    & th {
+      @apply p-4 border-b font-normal text-gray-600;
+    }
+
+    & td {
+      @apply p-4 text-gray-500;
+    }
+
+    & code {
+      @apply p-1 text-blue-400;
+      // background-color: #f4f4f8;
+    }
+  }
+}

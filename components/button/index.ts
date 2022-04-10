@@ -1,9 +1,7 @@
-import { App } from "vue"
+import { withInstall } from "../../utils/make-installer"
 
-import Button from "./button"
+import Button from "./src/button"
 
-Button.install = (app: App) => {
-  app.component(Button.name, Button)
-}
+export const ZButton = withInstall(Button)
 
-export default Button
+export default ZButton

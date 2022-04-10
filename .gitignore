@@ -1,7 +1,7 @@
 node_modules
 yarn-debug.log
 yarn-error.log
-yarn-lock.log
+yarn.lock
 dist
 .idea
 .vscode

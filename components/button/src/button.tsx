@@ -1,5 +1,5 @@
 import { defineComponent } from "vue"
-import { getClass } from "../../utils/style"
+import { getClass } from "../../../utils/style"
 
 import "./button.scss"
 

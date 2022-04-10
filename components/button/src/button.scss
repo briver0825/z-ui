@@ -1,0 +1,42 @@
+.z-btn {
+  @apply inline-block cursor-pointer py-2 px-4 font-medium rounded text-gray-700 border border-solid hover:bg-gray-100 active:bg-gray-200;
+
+  &.primary {
+    @apply bg-blue-400 hover:bg-blue-300 text-white active:bg-blue-400;
+    &.plain {
+      @apply bg-gray-50 border-blue-300 hover:bg-blue-300 text-blue-400 active:bg-blue-400 hover:text-white;
+    }
+  }
+
+  &.danger {
+    @apply bg-red-400 hover:bg-red-300 text-white active:bg-red-400;
+    &.plain {
+      @apply bg-gray-50 border-red-300 hover:bg-red-300 text-red-400 active:bg-red-400 hover:text-white;
+    }
+  }
+
+  &.success {
+    @apply bg-green-400 hover:bg-green-300 text-white active:bg-green-400;
+    &.plain {
+      @apply bg-gray-50 border-green-300 hover:bg-green-300 text-green-400 active:bg-green-400 hover:text-white;
+    }
+  }
+
+  &.info {
+    @apply bg-gray-400 hover:bg-gray-300 text-white active:bg-gray-400;
+    &.plain {
+      @apply bg-gray-50 border-gray-300 hover:bg-gray-300 text-gray-400 active:bg-gray-400 hover:text-white;
+    }
+  }
+
+  &.warning {
+    @apply bg-yellow-400 hover:bg-yellow-300 text-white active:bg-yellow-400;
+    &.plain {
+      @apply bg-yellow-50 border-yellow-300 hover:bg-yellow-300 text-yellow-400 active:bg-yellow-400 hover:text-white;
+    }
+  }
+
+  &.round {
+    @apply rounded-3xl;
+  }
+}

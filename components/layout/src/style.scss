@@ -1,0 +1,11 @@
+.z-layout {
+  @apply flex flex-col box-border;
+}
+
+.z-layout .z-layout-container {
+  @apply flex;
+}
+
+.z-layout .z-layout-content {
+  @apply flex-1;
+}

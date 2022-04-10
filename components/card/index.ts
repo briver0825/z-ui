@@ -1,9 +1,7 @@
-import { App } from "vue"
+import { withInstall } from "../../utils/make-installer"
 
-import Card from "./card"
+import Card from "./src/card"
 
-Card.install = (app: App) => {
-  app.component(Card.name, Card)
-}
+export const ZCard = withInstall(Card)
 
-export default Card
+export default ZCard

@@ -1,7 +1,5 @@
 import { defineComponent, provide } from "vue"
 
-import "./row.scss"
-
 export default defineComponent({
   name: "ZRow",
   props: {
