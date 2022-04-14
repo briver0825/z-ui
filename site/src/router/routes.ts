@@ -1,7 +1,9 @@
-import Home from "../views/home.vue"
+import {routes as base} from "./base"
+import {routes as demos} from "./demos"
+
 const routes = [
-    { path: '/', component: Home },
-    { path: '/button', component: import("../docs/button.md") },
+    ...base,
+    ...demos
 ]
 
 export default routes

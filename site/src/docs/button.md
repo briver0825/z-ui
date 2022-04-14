@@ -2,18 +2,10 @@
 
 按钮用来触发一些操作。
 
-## API
+<Example code="" demo="button/basic" title="普通按钮"/>
+<Example code="" demo="button/plain" title="简约按钮"/>
 
-<z-row>
-  <z-col>
-    <Example code="" demo="button/basic" title="普通按钮"/>
-  </z-col>
-  <z-col>
-    <Example code="" demo="button/plain" title="简约按钮"/>
-  </z-col>
-</z-row>
-
-### Button Props
+## Button Props
 
 | 名称    | 类型            | 默认值  | 说明               |
 | ------- | --------------- | ------- | ------------------ |

@@ -4,6 +4,7 @@ import App from "./App.vue"
 import ZUI from "../../index"
 
 import "./style/markdown.scss"
+import "./style/global.scss"
 
 import Example from "./components/Example.vue"
 

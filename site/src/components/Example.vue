@@ -3,7 +3,6 @@
     <div class="code-box">
       <div class="title">
         <span>{{ title }}</span>
-        <div class="copy" @click="copyCode">复制代码</div>
         <div class="showCode" @click="toggleCode">
           {{ codeIsShow ? "关闭代码" : "显示代码" }}
         </div>
@@ -11,7 +10,7 @@
       <div class="comp">
         <component :is="comp"></component>
       </div>
-      <pre v-show="codeIsShow" ref="codeRef" v-text="code"></pre>
+      <pre class="code" v-show="codeIsShow" ref="codeRef" v-text="code"></pre>
     </div>
   </div>
 </template>
@@ -35,24 +34,13 @@ export default {
           demos[path]().then((mod) => {
             if (path.includes(demo)) {
               res(mod)
-              code.value = mod.code
-              console.log(mod.code)
+              code.value = mod.code.trim()
               rej()
             }
           })
         }
       })
     })
-    const codeRef = ref(null)
-    const copyCode = () => {
-      clipboard.copy(codeRef)
-      if (window.getSelection) {
-        // 获取选中
-        var selection = window.getSelection()
-        // 清除选中
-        selection.removeAllRanges()
-      }
-    }
 
     const codeIsShow = ref(false)
 
@@ -65,8 +53,6 @@ export default {
       comp,
       title,
       code,
-      copyCode,
-      codeRef,
       codeIsShow,
       toggleCode,
     }
@@ -76,8 +62,7 @@ export default {
 
 <style lang="scss">
 .container {
-  @apply box-border py-6;
-  width: 98%;
+  @apply box-border my-12 bg-white shadow-lg;
   & .code-box {
     @apply border rounded p-4;
     border-color: rgb(239, 239, 245);
@@ -86,11 +71,8 @@ export default {
       & span {
         @apply text-xl;
       }
-      & .copy {
-        @apply absolute top-0 right-2 text-sm text-gray-500 hover:text-red-400 cursor-pointer;
-      }
       & .showCode {
-        @apply absolute top-0 right-20 text-sm text-gray-500 hover:text-red-400 cursor-pointer;
+        @apply absolute top-0 right-2 text-sm text-gray-500 hover:text-red-400 cursor-pointer;
       }
     }
     & .comp {
@@ -103,6 +85,8 @@ export default {
     }
     & .code {
       @apply overflow-hidden;
+      width: 900px;
+  overflow-x:auto;
     }
   }
 }

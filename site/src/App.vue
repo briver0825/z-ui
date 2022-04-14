@@ -1,5 +1,5 @@
 <template>
-  <div class="app min-h-screen">
+  <div class="app shadow-lg">
     <z-layout>
       <z-layout-header>
         <Header></Header>
@@ -21,3 +21,15 @@ import Main from "./layout/Main.vue"
 import Sider from "./layout/Sider.vue";
 import Header from "./layout/Header.vue";
 </script>
+
+<style>
+body{
+  /* background-color: #f9fafb; */
+  background-color: #cad1e4;
+}
+.app{
+  max-width: 1300px;
+  min-width: 1000px;
+  margin: 0 auto;
+}
+</style>

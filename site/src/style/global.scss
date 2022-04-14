@@ -1,0 +1,21 @@
+html {
+    box-sizing: border-box;
+    scrollbar-width: thin;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    scrollbar-width: inherit;
+}
+
+// 伪元素无法继承
+*::-webkit-scrollbar {
+    width: 4px;
+    height: 10px;
+}
+*::-webkit-scrollbar-thumb {
+    background: rgba($color:rgb(80, 78, 78), $alpha: .15);
+    border-radius: 4px;
+}

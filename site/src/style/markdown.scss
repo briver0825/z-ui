@@ -1,5 +1,5 @@
 .markdown-body {
-  @apply p-16 text-gray-800;
+  @apply py-4 text-gray-800;
 
   & h1 {
     @apply text-3xl;
@@ -26,7 +26,7 @@
     @apply p-4 border-t mt-4 text-blue-400;
   }
   & table {
-    @apply border  text-left w-full;
+    @apply shadow-lg text-left w-full bg-white;
 
     & th {
       @apply p-4 border-b font-normal text-gray-600;
@@ -37,8 +37,8 @@
     }
 
     & code {
-      @apply p-1 text-blue-400;
-      // background-color: #f4f4f8;
+      @apply p-1 text-blue-400 px-2 rounded-sm;
+      background-color: #f4f4f8;
     }
   }
 }
